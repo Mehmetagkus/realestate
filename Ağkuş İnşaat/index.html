@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ağkuş İnşaat</title>
+</head>
+
+<body>
+    <header>
+        <!--page progress-->
+        <div class="progressArea">
+            <div class="progress"></div>
+        </div>
+        <!--page progress-->
+
+        <!--Navbar-->
+        <section>
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand navbar-logo ms-5 text-white" href="#">ağkuş inşaat</a>
+                    <a class="menu text-decoration-none text-white" href="#">ana sayfa</a>
+                    <a class="menu text-decoration-none text-white" href="#">projeler</a>
+                    <a class="menu text-decoration-none text-white" href="#">iletişim</a>
+                    <button class="navbar-toggler bg-light mobile-menu-button" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AĞKUŞ İNŞAAT</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item text-center">
+                                    <a class="nav-link active mobile-menu" href="#">Ana Sayfa</a>
+                                </li>
+                                <hr>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link active mobile-menu" href="#">Projeler</a>
+                                </li>
+                                <hr>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link active mobile-menu" href="#">İletişim</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!--Navbar-->
+
+        <!-- Swiper -->
+        <section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/picture/slider/slider1.jpg">
+                        <div class="hero">
+                            <p class="slider-text text-white">Kendinize güzellik yapın...</p>
+                            <button class="slider-btn btn" onClick="parent.location='http://www.google.com'">İletişime
+                                Geç</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/picture/slider/slider2.jpg" />
+                        <div class="hero">
+                            <p class="slider-text text-white">20 yıllık deneyimle sizlerin yanındayız...</p>
+                            <button class="slider-btn btn" onClick="parent.location='http://www.google.com'">İletişime
+                                Geç</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Swiper-->
+    </header>
+    <br>
+    <div class="container">
+        <section>
+            <div class="row" style="overflow: hidden;">
+                <img src="assets/picture/build1.jpg" alt="Fotoğraf" class="col img-fluid build-img mb-5">
+                <p class="col text-center about">
+                    <span class="h3">Biz Kimiz ?</span><br><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Distinctio, sunt placeat odit veniam
+                    voluptatum aliquam repudiandae quaerat cum atque totam ea dicta excepturi minima minus sed omnis
+                    porro voluptate exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus maiores, cumque veniam iusto nam consectetur accusamus consequuntur, dolorum asperiores
+                    tempore tenetur inventore ipsa officiis cupiditate harum ab mollitia architecto
+                    molestiae.<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dignissimos
+                    alias commodi perferendis ratione aperiam cupiditate modi. Aliquam alias dolores quis hic, qui
+                    sed molestias dolorem rem facere eligendi assumenda?
+                </p>
+            </div>
+        </section>
+    </div>
+    <br>
+    <div class="container bg-light border">
+        <section>
+            <ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+                <li class="nav-item col-3" role="presentation">
+                    <button class="active btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">2+1 Daireler</button>
+                </li>
+                <li class="nav-item col-3 " role="presentation">
+                    <button class="btn" id="pills-home-three-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home-three" type="button" role="tab" aria-controls="pills-home-three"
+                        aria-selected="false">3+1 Daireler</button>
+                </li>
+                <li class="nav-item col-3 " role="presentation">
+                    <button class="btn" id="pills-home-dubleks-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home-dubleks" type="button" role="tab" aria-controls="pills-home-dubleks"
+                        aria-selected="false">Dubleks Daireler</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                        necessitatibus repellendus,
+                        asperiores, dicta ipsa nisi similique, praesentium nulla quidem nam blanditiis magnam eos
+                        facere fugit assumenda doloribus hic? Ea, ipsa.<br>Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Explicabo ea officia debitis voluptas, harum unde porro assumenda ab
+                        ullam? Sint omnis deleniti, praesentium animi obcaecati accusamus sequi officia laudantium
+                        fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis rem commodi voluptas
+                        qui neque ut illum incidunt, soluta temporibus ipsum praesentium quod doloremque enim
+                        asperiores labore sit! Optio, laboriosam accusamus?</p>
+                    <img src="assets/picture/2+1/1.png" alt="" class="img-fluid w-50 d-block mx-auto">
+                </div>
+                <div class="tab-pane fade" id="pills-home-three" role="tabpanel" aria-labelledby="pills-home-three-tab"
+                    tabindex="0">
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                        necessitatibus repellendus,
+                        asperiores, dicta ipsa nisi similique, praesentium nulla quidem nam blanditiis magnam eos
+                        facere fugit assumenda doloribus hic? Ea, ipsa.<br>Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit.
+                        Explicabo ea officia debitis voluptas, harum unde porro assumenda ab ullam? Sint omnis
+                        deleniti, praesentium animi
+                        obcaecati accusamus sequi officia laudantium fugiat! Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Quis
+                        rem commodi voluptas qui neque ut illum incidunt, soluta temporibus ipsum praesentium quod
+                        doloremque enim
+                        asperiores labore sit! Optio, laboriosam accusamus?</p>
+                    <img src="assets/picture/3+1/1.jpg" alt="" class="img-fluid w-50 d-block mx-auto">
+                </div>
+                <div class="tab-pane fade" id="pills-home-dubleks" role="tabpanel"
+                    aria-labelledby="pills-home-dubleks-tab" tabindex="0">
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                        necessitatibus repellendus,
+                        asperiores, dicta ipsa nisi similique, praesentium nulla quidem nam blanditiis magnam eos
+                        facere fugit assumenda doloribus hic? Ea, ipsa.<br>Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit.
+                        Explicabo ea officia debitis voluptas, harum unde porro assumenda ab ullam? Sint omnis
+                        deleniti, praesentium animi
+                        obcaecati accusamus sequi officia laudantium fugiat! Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Quis
+                        rem commodi voluptas qui neque ut illum incidunt, soluta temporibus ipsum praesentium quod
+                        doloremque enim
+                        asperiores labore sit! Optio, laboriosam accusamus?</p>
+                    <img src="assets/picture/dubleks/1.png" alt="" class="img-fluid w-50 d-block mx-auto">
+                </div>
+            </div>
+        </section>
+    </div>
+    <br>
+    <hr>
+    <div class="container" style="position: relative;">
+        <section>
+            <div class="filter-btn-group row">
+                <button class="btn col-md-3 col-sm-12" data-filter="*">Tüm Daireler</button>
+                <button class="btn col-md-3 col-sm-12" data-filter=".twoPlusOne">2+1 Daireler</button>
+                <button class="btn col-md-3 col-sm-12" data-filter=".threePlusOne">3+1 Dairler</button>
+                <button class="btn col-md-3 col-sm-12" data-filter=".duplex">Dubleks Daireler</button>
+            </div>
+            <div class="home w-100">
+                <img src="assets/picture/2+1/1.png" alt="home" class="img-fluid home-img twoPlusOne border border-5">
+                <img src="assets/picture/dubleks/3.jfif" alt="home" class="img-fluid home-img duplex border border-5">
+                <img src="assets/picture/3+1/3.jpg" alt="home" class="img-fluid home-img threePlusOne border border-5">
+                <img src="assets/picture/3+1/4.png" alt="home" class="img-fluid home-img threePlusOne border border-5">
+                <img src="assets/picture/dubleks/2.png" alt="home" class="img-fluid home-img duplex border border-5">
+                <img src="assets/picture/2+1/3.jpg" alt="home" class="img-fluid home-img twoPlusOne border border-5">
+                <img src="assets/picture/2+1/4.jpg" alt="home" class="img-fluid home-img twoPlusOne border border-5">
+                <img src="assets/picture/3+1/1.jpg" alt="home" class="img-fluid home-img threePlusOne border border-5">
+                <img src="assets/picture/dubleks/1.png" alt="home" class="img-fluid home-img duplex border border-5">
+                <img src="assets/picture/3+1/2.jpg" alt="home" class="img-fluid home-img threePlusOne border border-5">
+                <img src="assets/picture/2+1/2.jpg" alt="home" class="img-fluid home-img twoPlusOne border border-5">
+
+            </div>
+        </section>
+    </div><br>
+    <div class="container-fluid">
+        <section>
+            <div class="footer">
+                <div class="social">
+                    <p class="text-center text-light text-uppercase footer-text">sosyal medya hesaplarımız</p>
+                    <div class="d-flex justify-content-around">
+                        <div><i class="social-img bi bi-instagram"></i></div>
+                        <div><i class="social-img bi bi-facebook"></i></div>
+                        <div><i class="social-img bi bi-linkedin"></i></div>
+                        <div><i class="social-img bi bi-whatsapp"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

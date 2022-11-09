@@ -1,0 +1,239 @@
+/*Button*/
+.btn {
+    font-size: 16px;
+    font-weight: bolder;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+
+    &:hover {
+        color: #1e1e2b;
+        transition-delay: .5s;
+
+        &::before {
+            width: 100%;
+        }
+
+        &::after {
+            height: 100%;
+            transition-delay: 0.4s;
+            color: rgb(0, 0, 0);
+        }
+
+    }
+
+    &:focus {
+        background-color: #000;
+        color: white;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: black;
+        transition: .5s ease;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.137);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        transition: .4s ease;
+        z-index: -1;
+    }
+}
+
+/*Button*/
+
+/*Progress Bar*/
+.progressArea {
+    width: 100%;
+    height: 7px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999 !important;
+}
+
+.progress {
+    height: 7px;
+    background-color: #fff;
+    width: 0%;
+}
+
+/*Progress Bar*/
+
+/*Navbar*/
+
+.navbar {
+    background: #000000d5;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 7px;
+
+}
+
+.navbar-logo {
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.menu {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.mobile-menu-button {
+    visibility: hidden;
+}
+
+.mobile-menu {
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        visibility: visible;
+
+    }
+
+}
+
+/*Navbar*/
+
+/*Swiper*/
+.swiper {
+    width: 100%;
+    height: 10%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    & img {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & .slider-text {
+        text-align: center;
+        font-family: 'Great Vibes', cursive;
+        font-size: 60px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        color: rgb(0, 0, 0);
+        text-transform: capitalize;
+        backdrop-filter: blur(1px);
+        text-shadow: 0 0 10px rgb(0, 0, 0);
+        animation: zoom 5s ease-in-out infinite;
+    }
+
+    @keyframes zoom {
+        100% {
+            transform: scale(1.2);
+        }
+    }
+
+    & .slider-btn {
+        margin-left: 50%;
+        transform: translate(-50%);
+        background: rgba(255, 255, 255, 0.26);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+    }
+}
+
+/*Swiper*/
+
+/*Home images*/
+.home {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    & .home-img {
+        height: 200px;
+        width: 278px;
+
+        &:hover {
+            transform: scale(2);
+            transition: 1s ease;
+            z-index: 999;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .home-img {
+            width: 100%;
+            margin: 0 auto;
+
+            &:hover {
+                transform: scale(1);
+                transition: 1s ease;
+                z-index: 999;
+            }
+        }
+    }
+
+}
+
+/*Home images*/
+
+
+.social{
+    width: 100%;
+    height:200px;
+    background-image: url(https://askarprefabrik.com/wp-content/uploads/2021/09/iki-katli-moduler-ev-mce47-732x486.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
